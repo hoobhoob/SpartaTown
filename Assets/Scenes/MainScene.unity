@@ -26724,6 +26724,7 @@ GameObject:
   - component: {fileID: 1166553300}
   - component: {fileID: 1166553302}
   - component: {fileID: 1166553303}
+  - component: {fileID: 1166553304}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -26828,6 +26829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2eec695eb7c1343bc277a1afa38f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 2141228223}
 --- !u!61 &1166553302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26925,6 +26927,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1166553304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166553295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e88bb4ee16526f4facf8ec3aabd7f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1179961804
 GameObject:
   m_ObjectHideFlags: 0

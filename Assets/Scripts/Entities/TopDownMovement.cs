@@ -10,6 +10,8 @@ public class TopDownMovement : MonoBehaviour
     private Vector2 _movementDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
 
+    public Animator _animator;
+
     private void Awake()
     {
         _controller = GetComponent<TopDownCharacterController>();
@@ -23,6 +25,14 @@ public class TopDownMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(_movementDirection ==  Vector2.zero)
+        {
+            _animator.SetBool("isRun", false);
+        }
+        else
+        {
+            _animator.SetBool("isRun", true);
+        }
         ApplyMovment(_movementDirection);
     }
 
