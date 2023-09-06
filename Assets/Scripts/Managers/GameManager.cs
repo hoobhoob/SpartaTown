@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         if (GameDataManger.D != null)
         {
             _playerNameTxt.text = GameDataManger.D.GetPlayerName();
-            string _playerType = GameDataManger.D.GetPlayerType();
+            _playerType = GameDataManger.D.GetPlayerType();
             foreach(string s in GameDataManger.D.playerTypeList)
             {
                 GameObject _player = _playerParent.transform.Find(s).gameObject;
@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour
                     _player.SetActive(false);
                 
             }
+        }
+        else
+        {
+            _playerNameTxt.text = "Chad";
+            _playerType = "Wizard";
         }
     }
 

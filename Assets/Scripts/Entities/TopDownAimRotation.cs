@@ -11,7 +11,8 @@ public class TopDownAimRotation : MonoBehaviour
 
     private void Awake()
     {
-        string playerType = GameManager.M.GetPlayerType();
+        //string playerType = GameManager.M.GetPlayerType();
+        string playerType = GameDataManger.D.GetPlayerType();
         characterRenderer = gameObject.transform.Find(playerType).gameObject.GetComponent<SpriteRenderer>();
         _controller = GetComponent<TopDownCharacterController>();
     }

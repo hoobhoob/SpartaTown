@@ -14,9 +14,10 @@ public class TopDownMovement : MonoBehaviour
 
     private void Awake()
     {
+        //string playerType = GameManager.M.GetPlayerType();
+        string playerType = GameDataManger.D.GetPlayerType();
         _controller = GetComponent<TopDownCharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
-        string playerType = GameManager.M.GetPlayerType();
         _animator = gameObject.transform.Find(playerType).gameObject.GetComponent<Animator>();
     }
 

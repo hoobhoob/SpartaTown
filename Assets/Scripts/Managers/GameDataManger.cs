@@ -9,7 +9,7 @@ public class GameDataManger : MonoBehaviour
 
     [SerializeField] private string _playerName;
     [SerializeField] private string _playerType;
-    public List<string> playerTypeList = new List<string> { "Knight", "Penguin" };
+    public List<string> playerTypeList = new List<string> { "Knight", "Penguin", "Wizard" };
     private int i;
     void Awake()
     {
