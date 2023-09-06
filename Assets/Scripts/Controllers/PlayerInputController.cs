@@ -29,5 +29,4 @@ public class PlayerInputController : TopDownCharacterController
             CallLookEvent(newAim);
         }
     }
-
 }

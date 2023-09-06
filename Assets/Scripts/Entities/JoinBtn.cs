@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class JoinBtn : MonoBehaviour
 {
-    private InputField _inputField;
-
+    [SerializeField] private TMP_InputField _inputField;
+    
     public void gameStart()
     {
         if (GameDataManger.D != null)
