@@ -5,6 +5,7 @@
 1. 게임 설명
 2. 구현 목록
 3. 플레이 화면
+4. 문제점
 
 ---
 
@@ -67,3 +68,14 @@
 ## 전체 타일 맵
 
 ![Map](/Map.png)
+
+---
+
+# 3. 문제점
+
+- StartScene 에서 캐릭터를 고를 때 GameDataScene에 데이터를 저장한다.
+- MainScene 에서 캐릭터를 움직일 때 TopDownMovement 와 TopDownAimRotation 에서 플레이어 타입을 GameDataManger에서 가지고 온다.
+- 플레이어 타입으로 플레이어 오브젝트 밑에 캐릭터 오브젝트를 골라서 SpriteRenderer 컴포넌트와 Animator 컴포넌트 를 가져와서 움직이게 한다.
+- GameDataManger에서 플레이어 타입을 가져오는건 잘 되는데 GameDataManger에서 GameManager로 플레이어 타입을 가져오고 GameManager에서 TopDown~ 들에게 보내는 경우 에러가 생긴다.
+- GameManager 가 먼저 생성되서 잘 될것같았는데 NullReferenceException 에러가 생긴다.
+- 이유를 알고 싶습니다...
