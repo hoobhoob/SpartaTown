@@ -71,7 +71,7 @@
 
 ---
 
-# 3. 문제점
+# 4. 문제점
 
 - StartScene 에서 캐릭터를 고를 때 GameDataScene에 데이터를 저장한다.
 - MainScene 에서 캐릭터를 움직일 때 TopDownMovement 와 TopDownAimRotation 에서 플레이어 타입을 GameDataManger에서 가지고 온다.
