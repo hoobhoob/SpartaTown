@@ -9,8 +9,10 @@ public class GameDataManger : MonoBehaviour
 
     [SerializeField] private string _playerName;
     [SerializeField] private string _playerType;
-    public List<string> playerTypeList = new List<string> { "Knight", "Penguin", "Wizard" };
+
+    private List<string> _playerTypeList = new List<string> { "Knight", "Penguin", "Wizard" };
     private int i;
+
     void Awake()
     {
         if (D == null)
@@ -22,7 +24,8 @@ public class GameDataManger : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        i = UnityEngine.Random.Range(0, playerTypeList.Count);
+        i = UnityEngine.Random.Range(0, _playerTypeList.Count);
+        _playerType = _playerTypeList[i];
     }
 
     public void SetPlayerName(string playerName)
@@ -37,6 +40,11 @@ public class GameDataManger : MonoBehaviour
 
     public string GetPlayerType()
     {
-        return playerTypeList[i];
+        return _playerType;
+    }
+
+    public List<string> GetPlayerTypeList()
+    {
+        return _playerTypeList;
     }
 }

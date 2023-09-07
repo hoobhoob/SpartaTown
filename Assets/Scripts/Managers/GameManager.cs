@@ -21,14 +21,13 @@ public class GameManager : MonoBehaviour
         {
             _playerNameTxt.text = GameDataManger.D.GetPlayerName();
             _playerType = GameDataManger.D.GetPlayerType();
-            foreach(string s in GameDataManger.D.playerTypeList)
+            foreach (string s in GameDataManger.D.GetPlayerTypeList())
             {
                 GameObject _player = _playerParent.transform.Find(s).gameObject;
                 if (s == _playerType)
                     _player.SetActive(true);
                 else
                     _player.SetActive(false);
-                
             }
         }
         else
