@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
-    private float movementSpeed = 10f;
+    [SerializeField] private float movementSpeed = 10f;
     private TopDownCharacterController _controller;
 
     private Vector2 _movementDirection = Vector2.zero;
     private Rigidbody2D _rigidbody;
 
-    public Animator _animator;
+    [SerializeField] private Animator _animator;
 
     private void Awake()
     {
+        //string playerType = GameManager.M.GetPlayerType();
+        string playerType = GameDataManger.D.GetPlayerType();
         _controller = GetComponent<TopDownCharacterController>();
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = gameObject.transform.Find(playerType).gameObject.GetComponent<Animator>();
     }
 
     private void Start()
