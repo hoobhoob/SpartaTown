@@ -38,3 +38,32 @@
 
 # 3. 플레이 화면
 
+## 0️⃣ 캐릭터 선택 및 생성 화면
+
+**🔽 캐릭터 선택 화면**
+
+캐릭터의 이미지를 눌러 선택할 수 있다.
+
+![StartScene1](/StartScene1.png)
+
+캐릭터를 고를 수 있다.
+
+![StartScene2](/StartScene2.png)
+
+개릭터의 이름을 입력할 수 있다.
+
+![StartScene3](/StartScene3.png)
+
+## 1️⃣ 게임 시작 화면
+
+**🔽 게임 시작 화면**
+
+입장 시 이름이 캐릭터 위에 나타난다.
+
+![MainScene1](/MainScene1.png)
+
+![MainScene3](/MainScene2.png)
+
+## 전체 타일 맵
+
+![Map](/Map.png)
