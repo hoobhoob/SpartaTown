@@ -33,6 +33,11 @@ public class GameDataManger : MonoBehaviour
         _playerName = playerName;
     }
 
+    public void SetPlayerType(string playerType)
+    {
+        _playerType = playerType;
+    }
+
     public string GetPlayerName()
     {
         return _playerName;
