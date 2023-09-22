@@ -51,7 +51,7 @@
 
 ![StartScene2](/StartScene2.png)
 
-개릭터의 이름을 입력할 수 있다.
+캐릭터의 이름을 입력할 수 있다.
 
 ![StartScene3](/StartScene3.png)
 
